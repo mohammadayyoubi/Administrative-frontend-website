@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header>
+        <nav class="bg-gray-800 text-white p-4">
+            <div class="flex items-center justify-between max-w-7xl mx-auto">
+                
+                <!-- Logo & Brand Name -->
+                <div class="flex items-center space-x-2">
+                    <a href="./index.html">
+                        <img src="img/favicon.png" alt="icon" class="h-10 w-10">
+                    </a>
+                    <a href="./index.html">
+                        <p class="font-bold text-white text-lg">
+                            DaMovie 
+                            <span class="text-sm block text-gray-400">Administrative Website</span>
+                        </p>
+                    </a>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex space-x-7 font-bold ">
+                    <li><a href="./index.html" class="hover:border-b-2 border-red-500 transition ">Home</a></li>
+                    <li><a href="./dashboard.html" class="hover:border-b-2 border-red-500 transition">Dashboard</a></li>
+                    <li><a href="./logs.html" class="hover:border-b-2 border-red-500 transition">Logs</a></li>
+                    <li><a href="./users.html" class="hover:border-b-2 border-red-500 transition">Users</a></li>
+                    <li><a href="./video.html" class="hover:border-b-2 border-red-500 transition">Video</a></li>
+                </ul>
+
+                <!-- Search Bar -->
+                <div class="relative">
+                    <input type="text" placeholder="Search..." 
+                        class="bg-gray-700 text-white px-4 py-2 pl-10 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <main class="min-h-screen flex justify-center items-center mt-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 ">
+            
+            <!-- User Card -->
+            <div class=" border border-red-500 rounded-lg bg-gray-800 text-white p-8 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full bg-white" src="img/man1.webp" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Mohamad</h2>
+                    <p class="text-gray-400 text-sm">Admin</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 25</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Male</p>
+                </div>
+            </div>
+    
+            <!-- Duplicate this card for multiple users -->
+            <div class="border border-red-500 rounded-lg bg-gray-800 text-white p-6 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full shadow-md bg-white " src="img/man2.png" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Ali</h2>
+                    <p class="text-gray-400 text-sm">Editor</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 30</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Male</p>
+                </div>
+            </div>
+    
+            <div class="border border-red-500 rounded-lg bg-gray-800 text-white p-6 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full shadow-md" src="img/man3.jpg" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Hamza</h2>
+                    <p class="text-gray-400 text-sm">Moderator</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 28</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Female</p>
+                </div>
+            </div>
+
+            <div class="border border-red-500 rounded-lg bg-gray-800 text-white p-6 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full shadow-md" src="img/girl1.jpg" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Sarah</h2>
+                    <p class="text-gray-400 text-sm">Moderator</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 22</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Female</p>
+                </div>
+            </div>
+
+            <div class="border border-red-500 rounded-lg bg-gray-800 text-white p-6 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full shadow-md" src="img/man4.avif" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Mahmoud</h2>
+                    <p class="text-gray-400 text-sm">Moderator</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 28</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Female</p>
+                </div>
+            </div>
+
+            <div class=" border border-red-500 rounded-lg bg-gray-800 text-white p-8 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full bg-white" src="img/man1.webp" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Mohamad</h2>
+                    <p class="text-gray-400 text-sm">Admin</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 25</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Male</p>
+                </div>
+            </div>
+    
+            <!-- Duplicate this card for multiple users -->
+            <div class="border border-red-500 rounded-lg bg-gray-800 text-white p-6 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full shadow-md bg-white " src="img/man2.png" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Ali</h2>
+                    <p class="text-gray-400 text-sm">Editor</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 30</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Male</p>
+                </div>
+            </div>
+    
+            <div class="border border-red-500 rounded-lg bg-gray-800 text-white p-6 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full shadow-md" src="img/man3.jpg" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Hamza</h2>
+                    <p class="text-gray-400 text-sm">Moderator</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 28</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Female</p>
+                </div>
+            </div>
+
+            <div class="border border-red-500 rounded-lg bg-gray-800 text-white p-6 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full shadow-md" src="img/girl1.jpg" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Sarah</h2>
+                    <p class="text-gray-400 text-sm">Moderator</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 22</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Female</p>
+                </div>
+            </div>
+
+            <div class="border border-red-500 rounded-lg bg-gray-800 text-white p-6 shadow-lg hover:scale-105 transition transform duration-300">
+                <div class="flex flex-col items-center">
+                    <img class="w-24 h-24 border-2 border-red-500 rounded-full shadow-md" src="img/man4.avif" alt="User Avatar">
+                    <h2 class="text-xl font-bold mt-4">Mahmoud</h2>
+                    <p class="text-gray-400 text-sm">Moderator</p>
+                </div>
+                <div class="mt-4 text-gray-300 space-y-2">
+                    <p><span class="font-semibold text-white">Age:</span> 28</p>
+                    <p><span class="font-semibold text-white">Gender:</span> Female</p>
+                </div>
+            </div>
+
+
+    
+        </div>
+    </main>
+    
+
+<footer class="text-center p-4 bg-gray-800 text-gray-400 mt-0">
+    © 2025 DaMovie. All rights reserved.
+</footer>
+
+</body>
+</html>
